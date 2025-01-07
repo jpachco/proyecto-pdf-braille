@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"> <!-- Inclui hojas de estilo -->
+    <title>PDF a Braille</title>
+    <script src="js/voiceHandler.js" defer></script> <!-- Incluir el script de voz -->
+</head>
+<body>
+    <form action="convert.php" method="POST" enctype="multipart/form-data">
+        <label for="pdf">Seleccionar archivo PDF:</label>
+        <!-- Aceptar solo archivos PDF -->
+        <input type="file" id="btnSeleccionar" name="pdf" accept=".pdf">
+        <button type="submit" id="btnConvertir">Convertir a Braille</button><!-- Boton para convertir -->
+    </form>
+</body>
+</html>
+
